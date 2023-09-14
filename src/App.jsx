@@ -10,12 +10,11 @@ import Contact from './components/contact/contact';
 
 const router=createHashRouter([
   
-  {path:'#',element:<Home/>,children:[
-    {path:'about',element:<About/>},
-    {path:'portfolio',element:<Portfolio/>},
-    {path:'contact',element:<Contact/>}
-  ]},
+  {path:'#',element:<Home/>},
   {path:'',element:<Home/>},
+  {path:'about',element:<About/>},
+  {path:'portfolio',element:<Portfolio/>},
+  {path:'contact',element:<Contact/>}
 ])
 export default class App extends Component {
   
